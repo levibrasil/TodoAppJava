@@ -21,8 +21,8 @@ import util.ConnectionFactory;
 public class TaskController {
     
     public void save(Task task) {
-        String sql = "INSET INTO tasks ("
-                + "idProjeto,"
+        String sql = "INSERT INTO tasks ("
+                + "idProject,"
                 + "name,"
                 + "description,"
                 + "completed,"
@@ -63,7 +63,7 @@ public class TaskController {
     
     public void update(Task task) {
         String sql = "UPDATE tasks SET "
-                + "idProjeto = ?, "
+                + "idProject = ?, "
                 + "name = ?, "
                 + "description = ?, "
                 + "completed = ?, "
